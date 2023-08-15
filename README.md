@@ -17,7 +17,8 @@ docker compose exec laravel.test composer install
 
 ```
 Run the project
-```bash
+``` bash
+sail artisan key:generate
 sail artisan migrate
 ```
 
