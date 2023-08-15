@@ -1,3 +1,36 @@
+
+# mfa-app
+Two factor authentication app, ready to integrate with third party applications.
+
+
+## Installation
+
+
+### Run project using laravel sail 
+
+Configure sail alias
+``` bash 
+echo "alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'" >> ~/.zshrc
+source ~/.zshrc
+docker compose up -d
+docker compose exec laravel.test composer install
+
+```
+Run the project
+```bash
+sail artisan migrate
+```
+
+
+
+## Third party integrations
+
+Markdown
+
+
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
